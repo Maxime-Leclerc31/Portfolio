@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maxime Leclerc — Ingénieur généraliste, aéro · spatial</title>
+<meta name="description" content="Portfolio de Maxime Leclerc, étudiant-ingénieur à Centrale Méditerranée — stages CNES, ArianeGroup, University of Oslo, et projets Python.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="frame-marks"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap nav">
+    <a href="#top" class="nav-id"><span class="dot"></span>M. LECLERC — PORTFOLIO</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Me contacter</a>
+    <button class="nav-burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-drawer">
+  <ul>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#formation">Formation</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">
+          <span class="seg-line"></span>
+          <span class="seg">Étudiant-ingénieur — Centrale Méditerranée</span>
+        </div>
+        <h1 class="hero-title">Maxime Leclerc.<br>Conception, données<br>et systèmes <span class="accent">aérospatiaux</span>.</h1>
+        <p class="hero-sub">
+          Élève-ingénieur en <strong>mécanique du vol et aérodynamique</strong>, formé au CNES, chez ArianeGroup
+          et à l'University of Oslo. À la recherche d'un <strong>stage de fin d'études (avril – septembre 2027,
+          6 mois)</strong> dans le secteur spatial.
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn primary">Voir les projets</a>
+          <a href="assets/CV_Maxime_Leclerc.pdf" class="btn ghost" target="_blank" rel="noopener">Télécharger le CV</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <div class="m-label">Localisation</div>
+            <div class="m-value">Toulouse, FR</div>
+          </div>
+          <div>
+            <div class="m-label">Disponibilité</div>
+            <div class="m-value">Avril 2027</div>
+          </div>
+          <div>
+            <div class="m-label">Langues</div>
+            <div class="m-value">FR · EN courant</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-ring"></div>
+        <div class="photo-frame">
+          <img src="assets/img/maxime.png" alt="Portrait de Maxime Leclerc">
+        </div>
+        <div class="photo-tag">Marseille / Toulouse</div>
+      </div>
+    </div>
+
+    <!-- Flight path signature element -->
+    <div class="flightpath">
+      <div class="flightpath-head">
+        <h3>Trajectoire — 2024 → 2026</h3>
+        <span class="label muted">Altitude relative — implication technique</span>
+      </div>
+      <div class="fp-svg-wrap">
+        <svg viewBox="0 0 1040 220" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <!-- baseline -->
+          <line x1="20" y1="190" x2="1020" y2="190" stroke="#D8D6CC" stroke-width="1"/>
+          <!-- flight curve -->
+          <path d="M 20 175 C 140 165, 180 120, 280 110 C 380 100, 420 150, 520 140 C 620 130, 660 70, 780 58 C 880 48, 920 30, 1020 18"
+                fill="none" stroke="#2B5C8A" stroke-width="1.6" stroke-dasharray="0"/>
+          <!-- nodes -->
+          <g>
+            <circle cx="280" cy="110" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
+            <text x="280" y="205" text-anchor="middle" class="fp-node-label">2024</text>
+            <text x="280" y="92" text-anchor="middle" class="fp-node-value">Décathlon</text>
+          </g>
+          <g>
+            <circle cx="520" cy="140" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
+            <text x="520" y="205" text-anchor="middle" class="fp-node-label">2025</text>
+            <text x="520" y="122" text-anchor="middle" class="fp-node-value">Univ. of Oslo</text>
+          </g>
+          <g>
+            <circle cx="780" cy="58" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
+            <text x="780" y="205" text-anchor="middle" class="fp-node-label">2025–26</text>
+            <text x="780" y="40" text-anchor="middle" class="fp-node-value">CNES</text>
+          </g>
+          <g>
+            <circle cx="1020" cy="18" r="5.5" fill="#B5532E" stroke="#B5532E" stroke-width="1.6"/>
+            <text x="975" y="205" text-anchor="middle" class="fp-node-label">2026</text>
+            <text x="965" y="14" text-anchor="middle" class="fp-node-value" fill="#B5532E" font-weight="700">ArianeGroup</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PARCOURS / EXPERIENCE ============ -->
+<section id="parcours">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="label">01 — Parcours professionnel</span>
+        <h2>Expériences en entreprise<br>et en laboratoire</h2>
+      </div>
+      <p class="sec-note">Quatre stages successifs, du commerce à l'ingénierie spatiale, construits autour d'une même rigueur de méthode.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="t-item current reveal">
+        <div class="t-date">Mai 2026<br>— en cours</div>
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <div class="t-card-head">
+            <span class="t-role">Stagiaire ingénieur génie industriel / informatique</span>
+            <span class="t-org">ArianeGroup</span>
+          </div>
+          <div class="t-place">Issac (Bordeaux) — 4 mois</div>
+          <ul>
+            <li>Développement d'outils de <strong>business intelligence</strong> pour la direction industrielle.</li>
+            <li>Constitution d'une base de données réunissant les moyens de production, de manutention et de contrôle de plusieurs unités ArianeGroup (dimensions, capacités, timbrages).</li>
+            <li>Conception d'une <strong>interface de vérification de faisabilité</strong> de fabrication à partir des dimensions d'un produit.</li>
+            <li>Validation du fonctionnement de l'outil sur des cas-école.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Business Intelligence</span>
+            <span class="tag">Base de données</span>
+            <span class="tag">Industrie</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item reveal">
+        <div class="t-date">Sept. 2025<br>— Fév. 2026</div>
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <div class="t-card-head">
+            <span class="t-role">Stagiaire — Système de gestion de base de connaissances COMET</span>
+            <span class="t-org">CNES</span>
+          </div>
+          <div class="t-place">Toulouse — 6 mois</div>
+          <ul>
+            <li><strong>Pilotage de projet</strong> de bout en bout, du cahier des charges au déploiement.</li>
+            <li>Développement d'un <strong>prototype fonctionnel</strong> de gestion et de partage des connaissances.</li>
+            <li>Interfaçage avec les équipes pour structurer la base de connaissances COMET.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Gestion de projet</span>
+            <span class="tag">Prototypage</span>
+            <span class="tag">Spatial</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item reveal">
+        <div class="t-date">Fév. 2025<br>— Juil. 2025</div>
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <div class="t-card-head">
+            <span class="t-role">Stagiaire en recherche — mécanique des fluides</span>
+            <span class="t-org">University of Oslo</span>
+          </div>
+          <div class="t-place">Oslo, Norvège — 6 mois (5 mois terrain)</div>
+          <ul>
+            <li>Expérience de recherche internationale en <strong>mécanique des fluides</strong>, en bassin à houle.</li>
+            <li>Conception d'une chaîne complète de traitement de signal : nettoyage, filtrage, analyse de Fourier, séparation onde incidente / réfléchie.</li>
+            <li>Développement en Python d'une bibliothèque de seize programmes interconnectés (voir <a href="#projets" style="text-decoration:underline;">projet « Analyse de bassin à houle »</a>).</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Traitement du signal</span>
+            <span class="tag">Recherche</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item reveal">
+        <div class="t-date">Juil. 2024</div>
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <div class="t-card-head">
+            <span class="t-role">Vendeur sportif omni-commerçant</span>
+            <span class="t-org">Décathlon</span>
+          </div>
+          <div class="t-place">Marseille — 1 mois</div>
+          <ul>
+            <li>Développement du sens du service client et du travail en équipe.</li>
+            <li>Découverte du fonctionnement opérationnel d'une grande enseigne.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Service client</span>
+            <span class="tag">Travail d'équipe</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETS ============ -->
+<section id="projets">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="label">02 — Projets personnels</span>
+        <h2>Python, simulation<br>et intelligence artificielle</h2>
+      </div>
+      <p class="sec-note">Des projets développés en autonomie, du solveur logique aux réseaux de neurones évolutionnaires, en passant par le traitement de signal scientifique.</p>
+    </div>
+
+    <div class="proj-grid">
+
+      <!-- Projet 1 : Bassin à houle -->
+      <div class="proj-card reveal" data-project="houle" tabindex="0" role="button">
+        <div class="proj-media">
+          <img src="assets/img/ondes_simu.png" alt="Surface 3D intensité lumineuse en fonction de la distance et longueur d'onde">
+          <span class="pm-index">FIG. 01</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Analyse de bassin à houle</h3>
+          <p class="proj-desc">Chaîne complète de traitement du signal pour quatre sondes de houle : nettoyage des données, filtrage, FFT, séparation onde incidente / réfléchie et interface de visualisation Tkinter. Développé pendant le stage de recherche à l'UiO.</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>NumPy</span><span>SciPy</span><span>Tkinter</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 : Morpion IA -->
+      <div class="proj-card reveal" data-project="morpion" tabindex="0" role="button">
+        <div class="proj-media code-render">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <rect x="2" y="2" width="116" height="116" stroke="#7FA8C9" stroke-width="1"/>
+            <line x1="40" y1="4" x2="40" y2="116" stroke="#7FA8C9" stroke-width="1"/>
+            <line x1="80" y1="4" x2="80" y2="116" stroke="#7FA8C9" stroke-width="1"/>
+            <line x1="4" y1="40" x2="116" y2="40" stroke="#7FA8C9" stroke-width="1"/>
+            <line x1="4" y1="80" x2="116" y2="80" stroke="#7FA8C9" stroke-width="1"/>
+            <circle cx="60" cy="60" r="14" stroke="#B5532E" stroke-width="2.4"/>
+            <path d="M10 10 L30 30 M30 10 L10 30" stroke="#FAFAF7" stroke-width="2.4"/>
+            <path d="M90 90 L110 110 M110 90 L90 110" stroke="#FAFAF7" stroke-width="2.4"/>
+          </svg>
+          <span class="pm-index">FIG. 02</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Morpion — IA par algorithme génétique</h3>
+          <p class="proj-desc">Un agent de morpion entraîné par évolution de réseaux de neurones (NEAT), affronté via une interface graphique Tkinter. Inclut un volet annexe en Panda3D explorant l'apprentissage par évolution dans un environnement 3D.</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>NEAT</span><span>Tkinter</span><span>Panda3D</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 : Sudoku -->
+      <div class="proj-card reveal" data-project="sudoku" tabindex="0" role="button">
+        <div class="proj-media">
+          <img src="assets/img/sudoku.jpg" alt="Grille de sudoku générée par le solveur Python">
+          <span class="pm-index">FIG. 03</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Solveur de Sudoku logique</h3>
+          <p class="proj-desc">Solveur appliquant des techniques de résolution humaines (singles cachés en ligne, colonne et carré, alignements de candidats) plutôt que du backtracking brut, avec rendu graphique de la grille via Turtle.</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>NumPy</span><span>Turtle</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 4 : Simulation d'ondes -->
+      <div class="proj-card reveal" data-project="ondes" tabindex="0" role="button">
+        <div class="proj-media">
+          <img src="assets/img/ondes_simu0.png" alt="Simulation de propagation d'onde en fibre optique">
+          <span class="pm-index">FIG. 04</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Simulations physiques d'ondes</h3>
+          <p class="proj-desc">Série de scripts de modélisation : propagation et atténuation de la lumière en fibre optique (loi de Rayleigh), et résolution géométrique de l'intersection de deux courbures par dichotomie.</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>Matplotlib</span><span>NumPy</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 5 : Automatisation -->
+      <div class="proj-card reveal" data-project="automatisation" tabindex="0" role="button">
+        <div class="proj-media code-render">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="34" stroke="#7FA8C9" stroke-width="1.4"/>
+            <circle cx="60" cy="60" r="4" fill="#7FA8C9"/>
+            <line x1="60" y1="60" x2="60" y2="30" stroke="#FAFAF7" stroke-width="2"/>
+            <line x1="60" y1="60" x2="82" y2="74" stroke="#FAFAF7" stroke-width="2"/>
+            <circle cx="60" cy="60" r="50" stroke="#B5532E" stroke-width="1" stroke-dasharray="4 4"/>
+          </svg>
+          <span class="pm-index">FIG. 05</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Automatisation de capture photogrammétrique</h3>
+          <p class="proj-desc">Script pilotant une webcam IP et un plateau rotatif pour automatiser la capture de séries de photos en vue d'une modélisation 3D, avec guidage interactif de l'utilisateur et retour sonore.</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>PyAutoGUI</span><span>Requests</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 6 : PythonITER -->
+      <div class="proj-card reveal" data-project="iter" tabindex="0" role="button">
+        <div class="proj-media code-render">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <ellipse cx="60" cy="60" rx="46" ry="18" stroke="#7FA8C9" stroke-width="1.4"/>
+            <ellipse cx="60" cy="60" rx="18" ry="46" stroke="#7FA8C9" stroke-width="1.4" opacity="0.6"/>
+            <circle cx="60" cy="60" r="5" fill="#B5532E"/>
+          </svg>
+          <span class="pm-index">FIG. 06</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Cinétique de désorption thermique</h3>
+          <p class="proj-desc">Résolution numérique d'équations différentielles (ODE) modélisant la désorption d'un gaz en fonction de la température, comparée à des données expérimentales — exercice inspiré de la physique des matériaux pour fusion (type ITER).</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>SciPy</span><span>Pandas</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPETENCES ============ -->
+<section id="competences">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="label">03 — Compétences</span>
+        <h2>Outils, méthodes<br>et langues</h2>
+      </div>
+      <p class="sec-note">Une boîte à outils construite à l'école, en stage et sur des projets personnels.</p>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-cell">
+        <span class="sk-label">Langages</span>
+        <ul>
+          <li>Python</li>
+          <li>Matlab / Simulink</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <span class="sk-label">Outils &amp; bibliothèques</span>
+        <ul>
+          <li>NumPy · SciPy · Pandas</li>
+          <li>Matplotlib</li>
+          <li>Pack Office</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <span class="sk-label">Méthodes</span>
+        <ul>
+          <li>Gestion de projet</li>
+          <li>Travail collaboratif</li>
+          <li>Esprit d'analyse</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <span class="sk-label">Langues</span>
+        <ul>
+          <li>Français — langue maternelle</li>
+          <li>Anglais — courant (Australie 3 ans, Norvège 6 mois)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMATION ============ -->
+<section id="formation">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="label">04 — Formation</span>
+        <h2>Parcours académique</h2>
+      </div>
+      <p class="sec-note">Filière généraliste, spécialisation mécanique du vol et aérodynamique.</p>
+    </div>
+
+    <div class="edu-list reveal">
+      <div class="edu-item">
+        <div class="edu-date">2023 — 2027</div>
+        <div>
+          <div class="edu-name">École Centrale Méditerranée, Marseille</div>
+          <div class="edu-detail">Diplôme d'ingénieur généraliste · spécialités mécanique du vol et aérodynamique · filière métier Conception &amp; bureau d'études.</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-date">2021 — 2023</div>
+        <div>
+          <div class="edu-name">Lycée Saliège, Toulouse</div>
+          <div class="edu-detail">CPGE filière PC (Physique-Chimie).</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-date">2018 — 2021</div>
+        <div>
+          <div class="edu-name">Lycée Émilie de Rodat, Toulouse</div>
+          <div class="edu-detail">Baccalauréat général, mention Bien — spécialités Mathématiques et Physique-Chimie.</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-date">2019</div>
+        <div>
+          <div class="edu-name">Brevet d'Initiation à l'Aéronautique</div>
+          <div class="edu-detail">Examen théorique, mention Très Bien.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:48px;"></div>
+
+    <div class="sec-head reveal" style="margin-bottom:28px;">
+      <div>
+        <span class="label">05 — Vie associative</span>
+        <h2 style="font-size: clamp(24px, 2.6vw, 30px);">Engagement étudiant</h2>
+      </div>
+    </div>
+    <div class="extra-grid reveal">
+      <div class="extra-card">
+        <h4>Vice-trésorier — Bureau des Sports</h4>
+        <p>Gestion d'un budget de 200 000 € avec le trésorier. Suivi administratif et financier de l'ensemble des activités sportives de l'école (jan. 2024 — jan. 2025).</p>
+      </div>
+      <div class="extra-card">
+        <h4>Responsable activités — Massilia Sun Ball</h4>
+        <p>Organisation d'un tournoi étudiant réunissant plus de 1 500 participants. Coordination d'équipes et planification logistique de l'événement (nov. 2023 — nov. 2024).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact-sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="label">06 — Contact</span>
+        <h2>Construisons la suite<br>de mon parcours.</h2>
+      </div>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div>
+        <p class="contact-lead">
+          Je recherche un <strong style="color:#fff;">stage de fin d'études de 6 mois</strong>, d'avril à
+          septembre 2027, dans le secteur spatial. N'hésitez pas à me contacter directement.
+        </p>
+        <div class="contact-channels">
+          <a href="mailto:maxime31.leclerc@gmail.com" class="c-row">
+            <span>
+              <span class="c-label">Email</span><br>
+              <span class="c-value">maxime31.leclerc@gmail.com</span>
+            </span>
+            <span class="c-arrow">→</span>
+          </a>
+          <a href="tel:+33766103960" class="c-row">
+            <span>
+              <span class="c-label">Téléphone</span><br>
+              <span class="c-value">+33 7 66 10 39 60</span>
+            </span>
+            <span class="c-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/maximeleclerc-02b695237" target="_blank" rel="noopener" class="c-row">
+            <span>
+              <span class="c-label">LinkedIn</span><br>
+              <span class="c-value">linkedin.com/in/maximeleclerc</span>
+            </span>
+            <span class="c-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <span class="label">Fiche rapide</span>
+        <ul>
+          <li><span>Localisation</span><span>Toulouse, FR</span></li>
+          <li><span>Disponibilité</span><span>Avril 2027</span></li>
+          <li><span>Durée</span><span>6 mois</span></li>
+          <li><span>Permis</span><span>Permis B</span></li>
+          <li><span>Secteur visé</span><span>Spatial</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© <span id="year">2026</span> MAXIME LECLERC</span>
+    <span>SITE CONÇU COMME UN CARNET DE BUREAU D'ÉTUDES</span>
+  </div>
+</footer>
+
+</main>
+
+<!-- ============ MODAL PROJET ============ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box" id="modal-box"></div>
+</div>
+
+<script>
+window.PROJECT_DATA = {
+  houle: {
+    eyebrow: "Stage de recherche — University of Oslo",
+    title: "Analyse de bassin à houle",
+    intro: "Pipeline de traitement de donnees experimentales issues de quatre sondes mesurant des signaux de houle sous differentes hauteurs d'eau, amplitudes, frequences et repetitions.",
+    points: [
+      "Nettoyage : suppression des valeurs manquantes et des anomalies, filtrage passe-bas par moyenne mobile pondérée.",
+      "Détection automatique et manuelle des début/fin d'onde, avec interface interactive de correction.",
+      "Analyse de Fourier (FFT) pour estimer le nombre d'onde spatial et la longueur d'onde par régression linéaire des phases.",
+      "Séparation des composantes incidente et réfléchie par résolution d'un système aux moindres carrés.",
+      "Interface Tkinter centralisant la génération de l'ensemble des graphiques de validation."
+    ],
+    stack: ["Python", "NumPy", "Pandas", "SciPy", "Matplotlib", "Tkinter"]
+  },
+  morpion: {
+    eyebrow: "Projet personnel — Intelligence artificielle",
+    title: "Morpion — IA par algorithme génétique",
+    intro: "Un réseau de neurones entraîné par l'algorithme évolutionnaire NEAT apprend à jouer au morpion par sélection successive de générations de joueurs.",
+    points: [
+      "Le réseau reçoit l'état du plateau (9 cases) et produit la position jouée la plus prometteuse.",
+      "Interface graphique Tkinter permettant d'affronter directement l'IA entraînée.",
+      "Volet annexe en Panda3D : un environnement 3D où plusieurs agents NEAT apprennent simultanément à se déplacer et à atteindre un objectif, avec gestion de collisions et suivi de la fitness en temps réel."
+    ],
+    stack: ["Python", "NEAT-Python", "Tkinter", "Panda3D", "Matplotlib"]
+  },
+  sudoku: {
+    eyebrow: "Projet personnel — Algorithmique",
+    title: "Solveur de Sudoku logique",
+    intro: "Plutôt qu'un simple backtracking, ce solveur reproduit le raisonnement humain : à chaque étape, il réduit les candidats possibles case par case puis détecte les chiffres qui ne peuvent se placer qu'à un seul endroit.",
+    points: [
+      "Détection des singles cachés par ligne, colonne et carré 3×3.",
+      "Détection d'alignements de petits chiffres candidats pour éliminer des possibilités dans les carrés voisins.",
+      "Rendu graphique de la grille avec le module Turtle.",
+      "Module complémentaire de détection de grille, point de départ d'une lecture automatique de grilles photographiées."
+    ],
+    stack: ["Python", "NumPy", "Turtle"]
+  },
+  ondes: {
+    eyebrow: "Projets personnels — Physique numérique",
+    title: "Simulations physiques d'ondes",
+    intro: "Deux familles de simulations indépendantes autour de la propagation d'ondes.",
+    points: [
+      "Modélisation de l'atténuation de l'intensité lumineuse dans une fibre optique selon la loi de diffusion de Rayleigh.",
+      "Résolution géométrique par dichotomie de l'intersection entre deux profils de courbure définis par morceaux."
+    ],
+    stack: ["Python", "NumPy", "Matplotlib"]
+  },
+  automatisation: {
+    eyebrow: "Projet personnel — Automatisation",
+    title: "Automatisation de capture photogrammétrique",
+    intro: "Script d'automatisation d'une chaîne de prise de vue pour la modélisation 3D par photogrammétrie : capture d'un objet posé sur un plateau rotatif, photographié à intervalles réguliers via une webcam IP.",
+    points: [
+      "Guidage pas à pas de l'utilisateur avant le lancement de la capture.",
+      "Déclenchement automatique des prises de vue avec retours sonores pour suivre la progression.",
+      "Organisation automatique des photos capturées dans des dossiers horodatés."
+    ],
+    stack: ["Python", "PyAutoGUI", "Requests", "OS"]
+  },
+  iter: {
+    eyebrow: "Projet personnel — Physique numérique",
+    title: "Cinétique de désorption thermique",
+    intro: "Résolution d'équations différentielles ordinaires modélisant la désorption d'un gaz piégé dans un matériau en fonction de la température.",
+    points: [
+      "Intégration numérique des équations de taux de désorption via odeint (SciPy).",
+      "Comparaison de plusieurs énergies de désorption à des données expérimentales.",
+      "Visualisation comparative des courbes théoriques et expérimentales avec Matplotlib."
+    ],
+    stack: ["Python", "SciPy", "Pandas", "Matplotlib"]
+  }
+};
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
