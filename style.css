@@ -440,9 +440,10 @@ section + section{ border-top: 1px solid var(--rule); }
   font-size: 12.5px;
   color: var(--ink-soft);
   padding-top: 3px;
+  padding-right: 18px;
   text-align: right;
 }
-@media (max-width: 700px){ .t-date{ text-align:left; } }
+@media (max-width: 700px){ .t-date{ text-align:left; padding-right:0; } }
 
 .t-dot{
   position: absolute;
@@ -468,6 +469,27 @@ section + section{ border-top: 1px solid var(--rule); }
   gap: 16px;
   margin-bottom: 6px;
   flex-wrap: wrap;
+}
+.t-role-group{
+  display:flex;
+  align-items:center;
+  gap: 13px;
+}
+.t-logo{
+  flex: 0 0 auto;
+  width: 48px;
+  height: 34px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 5px 6px;
+}
+.t-logo img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 .t-role{
   font-family: var(--display);
@@ -640,10 +662,31 @@ section + section{ border-top: 1px solid var(--rule); }
 .edu-group-head{
   display:flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 16px;
   margin-bottom: 18px;
   flex-wrap: wrap;
+}
+.edu-group-title{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+}
+.edu-logo{
+  flex: 0 0 auto;
+  width: 48px;
+  height: 34px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 5px 6px;
+}
+.edu-logo img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 .edu-group-name{
   font-family: var(--display);
