@@ -92,40 +92,79 @@
       </div>
     </div>
 
-    <!-- Flight path signature element -->
+    <!-- Linear timeline signature element -->
     <div class="flightpath">
       <div class="flightpath-head">
-        <h3>Trajectoire — 2024 → 2026</h3>
-        <span class="label muted">Altitude relative — implication technique</span>
+        <h3>Parcours — 2018 → 2026</h3>
+        <span class="label muted">Du lycée à aujourd'hui, avec les quatre stages effectués</span>
       </div>
       <div class="fp-svg-wrap">
-        <svg viewBox="0 0 1040 220" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 1040 260" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg">
+
           <!-- baseline -->
-          <line x1="20" y1="190" x2="1020" y2="190" stroke="#D8D6CC" stroke-width="1"/>
-          <!-- flight curve -->
-          <path d="M 20 178 C 100 176, 180 172, 280 168 C 380 164, 420 130, 520 112 C 620 94, 660 70, 780 58 C 880 48, 920 30, 1020 18"
-                fill="none" stroke="#2B5C8A" stroke-width="1.6" stroke-dasharray="0"/>
-          <!-- nodes -->
+          <line x1="20" y1="220" x2="1020" y2="220" stroke="#2B5C8A" stroke-width="1.6"/>
+
+          <!-- main milestones on baseline -->
           <g>
-            <circle cx="280" cy="168" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
-            <text x="280" y="205" text-anchor="middle" class="fp-node-label">2024</text>
-            <text x="280" y="183" text-anchor="middle" class="fp-node-value">Décathlon</text>
+            <circle cx="20" cy="220" r="4" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.4"/>
+            <text x="20" y="240" text-anchor="start" class="fp-node-label">2018</text>
+            <text x="20" y="255" text-anchor="start" class="fp-node-value">Lycée Émilie de Rodat</text>
           </g>
+
           <g>
-            <circle cx="520" cy="112" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
-            <text x="520" y="205" text-anchor="middle" class="fp-node-label">2025</text>
-            <text x="520" y="94" text-anchor="middle" class="fp-node-value">Univ. of Oslo</text>
+            <circle cx="220" cy="220" r="4" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.4"/>
+            <text x="220" y="240" text-anchor="middle" class="fp-node-label">2021</text>
+            <text x="220" y="255" text-anchor="middle" class="fp-node-value">Bac · CPGE</text>
           </g>
+
           <g>
-            <circle cx="780" cy="58" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
-            <text x="780" y="205" text-anchor="middle" class="fp-node-label">2025–26</text>
-            <text x="780" y="40" text-anchor="middle" class="fp-node-value">CNES</text>
+            <circle cx="420" cy="220" r="4" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.4"/>
+            <text x="420" y="240" text-anchor="middle" class="fp-node-label">2023</text>
+            <text x="420" y="255" text-anchor="middle" class="fp-node-value">Centrale Méditerranée</text>
           </g>
+
           <g>
-            <circle cx="1020" cy="18" r="5.5" fill="#B5532E" stroke="#B5532E" stroke-width="1.6"/>
-            <text x="975" y="205" text-anchor="middle" class="fp-node-label">2026</text>
-            <text x="965" y="14" text-anchor="middle" class="fp-node-value" fill="#B5532E" font-weight="700">ArianeGroup</text>
+            <circle cx="1020" cy="220" r="5" fill="#B5532E" stroke="#B5532E" stroke-width="1.6"/>
+            <text x="1000" y="240" text-anchor="end" class="fp-node-label">2026</text>
+            <text x="1000" y="255" text-anchor="end" class="fp-node-value" fill="#B5532E" font-weight="700">Aujourd'hui</text>
           </g>
+
+          <!-- branch: Décathlon -->
+          <g>
+            <line x1="480" y1="220" x2="480" y2="160" stroke="#2B5C8A" stroke-width="1.2"/>
+            <circle cx="480" cy="220" r="3.5" fill="#2B5C8A"/>
+            <circle cx="480" cy="160" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
+            <text x="480" y="146" text-anchor="middle" class="fp-node-value">Décathlon</text>
+            <text x="480" y="132" text-anchor="middle" class="fp-node-label">Juil. 2024</text>
+          </g>
+
+          <!-- branch: University of Oslo -->
+          <g>
+            <line x1="630" y1="220" x2="630" y2="120" stroke="#2B5C8A" stroke-width="1.2"/>
+            <circle cx="630" cy="220" r="3.5" fill="#2B5C8A"/>
+            <circle cx="630" cy="120" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
+            <text x="630" y="106" text-anchor="middle" class="fp-node-value">Univ. of Oslo</text>
+            <text x="630" y="92" text-anchor="middle" class="fp-node-label">Fév. – Juil. 2025</text>
+          </g>
+
+          <!-- branch: CNES -->
+          <g>
+            <line x1="800" y1="220" x2="800" y2="80" stroke="#2B5C8A" stroke-width="1.2"/>
+            <circle cx="800" cy="220" r="3.5" fill="#2B5C8A"/>
+            <circle cx="800" cy="80" r="4.5" fill="#FAFAF7" stroke="#2B5C8A" stroke-width="1.6"/>
+            <text x="800" y="66" text-anchor="middle" class="fp-node-value">CNES</text>
+            <text x="800" y="52" text-anchor="middle" class="fp-node-label">Sept. 2025 – Fév. 2026</text>
+          </g>
+
+          <!-- branch: ArianeGroup -->
+          <g>
+            <line x1="940" y1="220" x2="940" y2="40" stroke="#B5532E" stroke-width="1.4"/>
+            <circle cx="940" cy="220" r="3.5" fill="#B5532E"/>
+            <circle cx="940" cy="40" r="5" fill="#B5532E" stroke="#B5532E" stroke-width="1.6"/>
+            <text x="940" y="26" text-anchor="middle" class="fp-node-value" fill="#B5532E" font-weight="700">ArianeGroup</text>
+            <text x="940" y="12" text-anchor="middle" class="fp-node-label">Mai 2026 — en cours</text>
+          </g>
+
         </svg>
       </div>
     </div>
@@ -280,7 +319,26 @@
         </div>
       </div>
 
-      <!-- Projet 2 : Morpion IA -->
+      <!-- Projet 2 : Automatisation -->
+      <div class="proj-card reveal" data-project="automatisation" tabindex="0" role="button">
+        <div class="proj-media">
+          <img src="assets/img/photogrametrie.png" alt="Automatisation de photogrammétrie avec webcam et plateau rotatif">
+          <span class="pm-index">FIG. 02</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Automatisation de capture photogrammétrique</h3>
+          <p class="proj-desc">Script pilotant une webcam IP et un plateau rotatif pour automatiser la capture de séries de photos en vue d'une modélisation 3D, avec guidage interactif de l'utilisateur et retour sonore.</p>
+          <div class="proj-foot">
+            <div class="proj-stack">
+              <span>Python</span><span>PyAutoGUI</span><span>Requests</span>
+            </div>
+            <span class="proj-link">Détails →</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Projet 3 : Morpion IA -->
       <div class="proj-card reveal" data-project="morpion" tabindex="0" role="button">
         <div class="proj-media">
           <img src="assets/img/Morpion.png" alt="Grille de morpion générée par l'IA">
@@ -298,11 +356,11 @@
         </div>
       </div>
 
-      <!-- Projet 3 : Sudoku -->
+      <!-- Projet 4 : Sudoku -->
       <div class="proj-card reveal" data-project="sudoku" tabindex="0" role="button">
         <div class="proj-media">
           <img src="assets/img/sudoku.jpg" alt="Grille de sudoku générée par le solveur Python">
-          <span class="pm-index">FIG. 03</span>
+          <span class="pm-index">FIG. 04</span>
         </div>
         <div class="proj-body">
           <h3 class="proj-title">Solveur de Sudoku logique</h3>
@@ -316,64 +374,27 @@
         </div>
       </div>
 
-      <!-- Projet 4 : Simulation d'ondes -->
-      <div class="proj-card reveal" data-project="ondes" tabindex="0" role="button">
-        <div class="proj-media">
-          <img src="assets/img/ondes_simu0.png" alt="Simulation de propagation d'onde en fibre optique">
-          <span class="pm-index">FIG. 04</span>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Simulations physiques d'ondes</h3>
-          <p class="proj-desc">Série de scripts de modélisation : propagation et atténuation de la lumière en fibre optique (loi de Rayleigh), et résolution géométrique de l'intersection de deux courbures par dichotomie.</p>
-          <div class="proj-foot">
-            <div class="proj-stack">
-              <span>Python</span><span>Matplotlib</span><span>NumPy</span>
-            </div>
-            <span class="proj-link">Détails →</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet 5 : Automatisation -->
-      <div class="proj-card reveal" data-project="automatisation" tabindex="0" role="button">
-        <div class="proj-media">
-          <img src="assets/img/photogrametrie.png" alt="Automatisation de photogrammétrie avec webcam et plateau rotatif">
+      <!-- Projet 5 : Évolution de créature -->
+      <div class="proj-card reveal" data-project="evolution" tabindex="0" role="button">
+        <div class="proj-media code-render">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="34" stroke="#7FA8C9" stroke-width="1.4"/>
+            <circle cx="60" cy="60" r="18" stroke="#7FA8C9" stroke-width="1.4" opacity="0.6"/>
+            <circle cx="60" cy="60" r="4" fill="#B5532E"/>
+          </svg>
           <span class="pm-index">FIG. 05</span>
         </div>
         <div class="proj-body">
-          <h3 class="proj-title">Automatisation de capture photogrammétrique</h3>
-          <p class="proj-desc">Script pilotant une webcam IP et un plateau rotatif pour automatiser la capture de séries de photos en vue d'une modélisation 3D, avec guidage interactif de l'utilisateur et retour sonore.</p>
+          <h3 class="proj-title">Évolution de créature <span style="color:#B5532E;font-weight:600;">— en cours</span></h3>
+          <p class="proj-desc">Simulation d'agents évoluant par algorithme génétique dans un environnement physique : sélection, mutation et croisement de générations successives de créatures pour optimiser un comportement cible (déplacement, survie). Projet en développement actif.</p>
           <div class="proj-foot">
             <div class="proj-stack">
-              <span>Python</span><span>PyAutoGUI</span><span>Requests</span>
+              <span>Python</span><span>Algorithme génétique</span><span>Simulation physique</span>
             </div>
             <span class="proj-link">Détails →</span>
           </div>
         </div>
       </div>
-
-      <!-- Projet 6 : PythonITER -->
-      <div class="proj-card reveal" data-project="iter" tabindex="0" role="button">
-        <div class="proj-media code-render">
-          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-            <ellipse cx="60" cy="60" rx="46" ry="18" stroke="#7FA8C9" stroke-width="1.4"/>
-            <ellipse cx="60" cy="60" rx="18" ry="46" stroke="#7FA8C9" stroke-width="1.4" opacity="0.6"/>
-            <circle cx="60" cy="60" r="5" fill="#B5532E"/>
-          </svg>
-          <span class="pm-index">FIG. 06</span>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Cinétique de désorption thermique</h3>
-          <p class="proj-desc">Résolution numérique d'équations différentielles (ODE) modélisant la désorption d'un gaz en fonction de la température, comparée à des données expérimentales — exercice inspiré de la physique des matériaux pour fusion (type ITER).</p>
-          <div class="proj-foot">
-            <div class="proj-stack">
-              <span>Python</span><span>SciPy</span><span>Pandas</span>
-            </div>
-            <span class="proj-link">Détails →</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -660,15 +681,17 @@ window.PROJECT_DATA = {
     ],
     stack: ["Python", "NumPy", "Turtle"]
   },
-  ondes: {
-    eyebrow: "Projets personnels — Physique numérique",
-    title: "Simulations physiques d'ondes",
-    intro: "Deux familles de simulations indépendantes autour de la propagation d'ondes.",
+  evolution: {
+    eyebrow: "Projet personnel — En cours · Algorithmique évolutionnaire",
+    title: "Évolution de créature",
+    intro: "Population de créatures simulées dont la morphologie et/ou le comportement évoluent au fil des générations par sélection, mutation et croisement, dans un environnement physique simulé.",
     points: [
-      "Modélisation de l'atténuation de l'intensité lumineuse dans une fibre optique selon la loi de diffusion de Rayleigh.",
-      "Résolution géométrique par dichotomie de l'intersection entre deux profils de courbure définis par morceaux."
+      "Définition d'un génome encodant la structure et/ou les paramètres de comportement de chaque créature.",
+      "Fonction de fitness évaluant la performance de chaque individu sur la tâche cible.",
+      "Boucle évolutive : sélection des meilleurs individus, croisement et mutation pour générer la population suivante.",
+      "Projet actuellement en développement : prochaines étapes en cours d'implémentation."
     ],
-    stack: ["Python", "NumPy", "Matplotlib"]
+    stack: ["Python", "Algorithme génétique", "Simulation physique"]
   },
   automatisation: {
     eyebrow: "Projet personnel — Automatisation",
@@ -681,17 +704,6 @@ window.PROJECT_DATA = {
     ],
     stack: ["Python", "PyAutoGUI", "Requests", "OS"]
   },
-  iter: {
-    eyebrow: "Projet personnel — Physique numérique",
-    title: "Cinétique de désorption thermique",
-    intro: "Résolution d'équations différentielles ordinaires modélisant la désorption d'un gaz piégé dans un matériau en fonction de la température.",
-    points: [
-      "Intégration numérique des équations de taux de désorption via odeint (SciPy).",
-      "Comparaison de plusieurs énergies de désorption à des données expérimentales.",
-      "Visualisation comparative des courbes théoriques et expérimentales avec Matplotlib."
-    ],
-    stack: ["Python", "SciPy", "Pandas", "Matplotlib"]
-  }
 };
 </script>
 
